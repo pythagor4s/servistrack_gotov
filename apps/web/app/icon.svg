@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="366.48 290.95 291.74 291.74" width="512" height="512">
+  <!-- OPOMBA STOJI ZNOTRAJ <svg> IN NE NAD NJIM. Next velikost prebere z `image-size`, ta pa SVG
+       prepozna z regexom cez PRVIH 1000 BAJTOV, in v to okno mora pasti CEL odpirajoci tag. Ko je
+       opomba stala nad njim, se je tag koncal na bajtu 1037 in build je padel z "unsupported file
+       type: undefined". Izmerjeno: konec taga na 997 se prebere, na 1007 ne.
+
+       TO JE IKONA ZAVIHKA in od 2026-08-30 nima crne plosce pod sabo. Prej je znamenje merilo
+       288 od 512, torej 56 % - ostalo je bila plosca, ki je v zavihku pojedla prostor. Zdaj je
+       ozadje PROZORNO in znamenje zavzame 85 % visine.
+
+       ZAKAJ 22 ENOT ZRAKA IN NE MANJ. Prvi poskus je imel 6 enot, torej 2.3 % okvirja - pri
+       16 px je to 0.37 px, kar se zaokrozi v nic. Ravni zgornji rob znamenja je s tem sedel na
+       PRVO vrstico pikslov: izmerjeno v ikoni 16x16 je vrstica 0 nosila 11 pikslov pri alfi 153,
+       enako pa vrstica 15 - poltransparenten pas cez skoraj vso sirino, ki v zavihku bere kot
+       crta nad znakom. Pri 22 enotah je zraka 7.5 % okvirja, torej 1.2 px pri 16 px, in rob
+       ima svojo prazno vrstico.
+
+       BARVA SE OBRACA S TEMO BRSKALNIKA, ker prozorna ikona nima svoje podlage: na svetli traki
+       zavihkov bi bela izginila in na temni crna. Poti zato nimajo svojega `fill` in ga
+       podedujejo; vrednosti v maski (#fff/#000) so prosojnost in ne barva, zato ostaneta dobesedni.
+
+       KAJ TA DATOTEKA NE HRANI: PNG-ji za domaci zaslon. `app/apple-icon.png` in
+       `public/icon-192|512.png` NAMENOMA obdrzijo temno plosco in znamenje pri 56 % - iOS
+       prozornost izrise kot crno, Android pa maskable ikono OBREZE in ji rabi varno obmocje.
+
+       `favicon.ico` (16/32/48) JE zrisan iz te risbe in je prav tako prozoren; ker ICO ne pozna
+       medijskih poizvedb, nosi fiksno temno crnilo - tisto, kar velja na svetli traki. -->
+  <style>
+    svg { fill: #0a0a0a }
+    @media (prefers-color-scheme: dark) { svg { fill: #fafafa } }
+  </style>
+  <mask id="erode" maskUnits="userSpaceOnUse" x="380" y="280" width="270" height="320">
+    <path d="M598.835 423.661C588.436 413.354 577.246 407.518 563.422 403.346C563.291 430.11 562.645 452.429 542.121 472.704C520.27 494.289 495.948 493.803 472.844 493.342C450.252 492.891 428.826 492.464 412.017 512.717C403.576 522.887 400.219 534.922 400.04 547.962C399.961 553.713 400.005 559.473 400.048 565.229C400.064 567.339 400.08 569.449 400.09 571.557L459.742 571.591L508.026 571.599C510.255 571.6 512.686 571.621 515.22 571.643C523.634 571.717 533.18 571.801 540.203 571.181C561.837 569.267 582.119 559.839 597.529 544.534C614.263 527.88 623.546 506.562 623.581 482.918C623.661 460.637 614.737 439.268 598.835 423.661Z" fill="#fff" stroke="#000" stroke-width="22" stroke-linejoin="round"/>
+    <path d="M499.185 301.986C495.246 301.953 490.188 301.911 487.263 302.208C387.912 309.828 367.77 439.808 459.018 470.606C459.004 467.593 458.953 464.659 458.903 461.793C458.538 440.79 458.237 423.432 472.887 405.315C485.549 390.343 500.81 382.516 520.402 380.641C528.936 379.825 537.903 380.117 546.893 380.411C570.691 381.189 594.647 381.971 611.15 362.188C625.156 345.398 624.909 329.483 624.612 310.267C624.57 307.564 624.527 304.796 624.523 301.95L528.384 301.957L502.07 302.004C501.233 302.003 500.25 301.995 499.185 301.986Z" fill="#fff" stroke="#000" stroke-width="22" stroke-linejoin="round"/>
+  </mask>
+  <g mask="url(#erode)">
+    <path d="M598.835 423.661C588.436 413.354 577.246 407.518 563.422 403.346C563.291 430.11 562.645 452.429 542.121 472.704C520.27 494.289 495.948 493.803 472.844 493.342C450.252 492.891 428.826 492.464 412.017 512.717C403.576 522.887 400.219 534.922 400.04 547.962C399.961 553.713 400.005 559.473 400.048 565.229C400.064 567.339 400.08 569.449 400.09 571.557L459.742 571.591L508.026 571.599C510.255 571.6 512.686 571.621 515.22 571.643C523.634 571.717 533.18 571.801 540.203 571.181C561.837 569.267 582.119 559.839 597.529 544.534C614.263 527.88 623.546 506.562 623.581 482.918C623.661 460.637 614.737 439.268 598.835 423.661Z"/>
+    <path d="M499.185 301.986C495.246 301.953 490.188 301.911 487.263 302.208C387.912 309.828 367.77 439.808 459.018 470.606C459.004 467.593 458.953 464.659 458.903 461.793C458.538 440.79 458.237 423.432 472.887 405.315C485.549 390.343 500.81 382.516 520.402 380.641C528.936 379.825 537.903 380.117 546.893 380.411C570.691 381.189 594.647 381.971 611.15 362.188C625.156 345.398 624.909 329.483 624.612 310.267C624.57 307.564 624.527 304.796 624.523 301.95L528.384 301.957L502.07 302.004C501.233 302.003 500.25 301.995 499.185 301.986Z"/>
+  </g>
+  <g transform="translate(509.24 436.05) scale(1.15) translate(-509.24 -436.05)">
+    <path d="M528.208 434.816C527.532 424.452 518.663 416.55 508.29 417.069C501.439 417.412 495.305 421.42 492.238 427.556C489.171 433.692 489.649 441.004 493.487 446.689C497.325 452.375 503.929 455.551 510.766 455C521.118 454.167 528.885 445.179 528.208 434.816Z"/>
+  </g>
+</svg>

@@ -1,0 +1,538 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  ADMIN
+  TECHNICIAN
+}
+
+enum TicketStatus {
+  OPEN
+  IN_PROGRESS
+  SERVICER_COMING
+  RESOLVED
+}
+
+enum TicketPriority {
+  NORMAL
+  HIGH
+}
+
+enum TicketType {
+  MACHINE
+  SOFTWARE
+  FACILITY
+  OTHER
+}
+
+enum NotificationChannel {
+  EMAIL
+  SMS
+  WEBHOOK
+}
+
+enum NotificationStatus {
+  PENDING
+  DELIVERED
+  FAILED
+}
+
+enum AttemptOutcome {
+  SUCCESS
+  FAILURE
+}
+
+enum NotificationAudience {
+  SERVICER
+  STAFF
+  REPORTER
+  SYSTEM
+}
+
+enum ThemePref {
+  DARK
+  LIGHT
+}
+
+enum ListView {
+  CARDS
+  TABLE
+}
+
+enum CalendarColor {
+  BLUE
+  GREEN
+  ORANGE
+  RED
+  VIOLET
+  GRAY
+}
+
+enum DepartmentColor {
+  BLUE
+  SKY
+  TEAL
+  GREEN
+  LIME
+  AMBER
+  ORANGE
+  PINK
+  VIOLET
+  GRAY
+}
+
+enum RecurrenceUnit {
+  WEEK
+  MONTH
+  YEAR
+}
+
+enum ExternalCodeKind {
+  MACHINE
+  DEPARTMENT
+  CATEGORY
+  WORKER
+}
+
+model User {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  name         String?
+  email        String?  @unique
+  passwordHash String
+  role         Role     @default(TECHNICIAN)
+  phone        String?
+  active       Boolean  @default(true)
+  departmentId String?
+  department   Department? @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  theme         ThemePref @default(DARK)
+  viewTickets   ListView  @default(TABLE)
+  viewMachines  ListView  @default(CARDS)
+  viewServicers ListView  @default(TABLE)
+  viewUsers     ListView  @default(TABLE)
+  notifyEmail   Boolean   @default(true)
+
+  assignedTickets   Ticket[]           @relation("TicketAssignee")
+  reportedTickets   Ticket[]           @relation("TicketReporter")
+  knowledgeArticles KnowledgeArticle[] @relation("UserKnowledge")
+  knowledgeFeedback KnowledgeFeedback[]
+  ticketEvents      TicketEvent[]
+  ticketComments    TicketComment[]
+  image             UserImage?
+  createdCalendarTasks  CalendarTask[]       @relation("CalendarCreator")
+  assignedCalendarTasks CalendarTask[]       @relation("CalendarAssignee")
+  calendarCompletions   CalendarCompletion[]
+  externalCodes         ExternalCode[]
+
+  @@index([departmentId])
+  @@map("users")
+}
+
+model UserImage {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  mimeType  String
+  size      Int
+  width     Int
+  height    Int
+  data      Bytes
+  updatedAt DateTime @updatedAt
+
+  @@map("user_images")
+}
+
+model Department {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  description String?
+  color       DepartmentColor @default(GRAY)
+  createdAt   DateTime @default(now())
+
+  tickets  Ticket[]
+  articles      KnowledgeArticle[]
+  machines      Machine[]
+  users         User[]
+  externalCodes ExternalCode[]
+
+  @@map("departments")
+}
+
+model MachineType {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  description String?
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+
+  machines Machine[]
+
+  @@map("machine_types")
+}
+
+model Machine {
+  id           String      @id @default(cuid())
+  brand        String
+  model        String
+  serialNo     String?
+  departmentId String?
+  department   Department? @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+  typeId       String?
+  type         MachineType? @relation(fields: [typeId], references: [id], onDelete: SetNull)
+  attachedToId String?
+  attachedTo   Machine?    @relation("MachineAttachment", fields: [attachedToId], references: [id], onDelete: SetNull)
+  active       Boolean     @default(true)
+  notes        String?
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  tickets           Ticket[]
+  knowledgeArticles KnowledgeArticle[]
+  calendarTasks     CalendarTask[]
+  image             MachineImage?
+  attachedItems     Machine[]          @relation("MachineAttachment")
+  externalCodes     ExternalCode[]
+
+  @@index([departmentId])
+  @@index([typeId])
+  @@index([attachedToId])
+  @@map("machines")
+}
+
+model MachineImage {
+  id        String   @id @default(cuid())
+  machineId String   @unique
+  machine   Machine  @relation(fields: [machineId], references: [id], onDelete: Cascade)
+  mimeType  String
+  size      Int
+  width     Int
+  height    Int
+  data      Bytes
+  updatedAt DateTime @updatedAt
+
+  @@map("machine_images")
+}
+
+model Ticket {
+  id           String         @id @default(cuid())
+  number       Int            @unique @default(autoincrement())
+  title        String
+  type         TicketType     @default(OTHER)
+  status       TicketStatus   @default(OPEN)
+  priority     TicketPriority @default(NORMAL)
+  assigneeId   String?
+  assignee     User?          @relation("TicketAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
+  departmentId String?
+  department   Department?    @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+  machineId    String?
+  machine      Machine?       @relation(fields: [machineId], references: [id], onDelete: SetNull)
+
+  faultDate    DateTime?
+  reporterName String?
+  reporterId   String?
+  reporter     User?     @relation("TicketReporter", fields: [reporterId], references: [id], onDelete: SetNull)
+
+  assignedServicerId String?
+  assignedServicer   Servicer? @relation(fields: [assignedServicerId], references: [id], onDelete: SetNull)
+  resolution         String?
+  resolvedAt         DateTime?
+
+  externalSource String?
+  externalId   String?
+  description  String?
+  categoryId   String?
+  category     FaultCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  externalRefs Json?
+
+  machineDown  Boolean   @default(false)
+  workOrderNo  String?
+  servicerEta  DateTime?
+  serviceCostCents Int?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  notifications     Notification[]
+  attachments       TicketAttachment[]
+  knowledgeArticles KnowledgeArticle[] @relation("TicketKnowledge")
+  events            TicketEvent[]
+  comments          TicketComment[]
+
+  @@index([status])
+  @@index([priority])
+  @@index([assigneeId])
+  @@index([departmentId])
+  @@index([machineId])
+  @@index([assignedServicerId])
+  @@index([reporterId])
+  @@index([categoryId])
+  @@index([servicerEta])
+  @@unique([externalSource, externalId])
+  @@map("tickets")
+}
+
+model TicketEvent {
+  id       String        @id @default(cuid())
+  ticketId String
+  ticket   Ticket        @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  from     TicketStatus?
+  to       TicketStatus
+  actorId  String?
+  actor    User?         @relation(fields: [actorId], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+
+  @@index([ticketId, createdAt])
+  @@map("ticket_events")
+}
+
+model Servicer {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  specialty String?
+  address   String?
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  tickets       Ticket[]
+  calendarTasks CalendarTask[]
+
+  @@map("servicers")
+}
+
+model TicketAttachment {
+  id        String   @id @default(cuid())
+  ticketId  String
+  ticket    Ticket   @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  filename  String
+  mimeType  String
+  size      Int
+  data      Bytes
+  createdAt DateTime @default(now())
+
+  @@index([ticketId])
+  @@map("ticket_attachments")
+}
+
+model KnowledgeArticle {
+  id           String      @id @default(cuid())
+  title        String
+  body         String
+  type         TicketType  @default(OTHER)
+  published    Boolean     @default(true)
+  pinned       Boolean     @default(false)
+  views        Int         @default(0)
+  departmentId String?
+  department   Department? @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+  machineId    String?
+  machine      Machine?    @relation(fields: [machineId], references: [id], onDelete: SetNull)
+  ticketId     String?
+  ticket       Ticket?     @relation("TicketKnowledge", fields: [ticketId], references: [id], onDelete: Cascade)
+  createdById  String?
+  createdBy    User?       @relation("UserKnowledge", fields: [createdById], references: [id], onDelete: SetNull)
+  categoryId   String?
+  category     FaultCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  tags         String[]    @default([])
+  feedback     KnowledgeFeedback[]
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  @@index([published])
+  @@index([type])
+  @@index([departmentId])
+  @@index([machineId])
+  @@index([ticketId])
+  @@index([createdById])
+  @@index([categoryId])
+  @@map("knowledge_articles")
+}
+
+model FaultCategory {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  icon        String
+  description String?
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  articles      KnowledgeArticle[]
+  tickets       Ticket[]
+  externalCodes ExternalCode[]
+
+  @@map("fault_categories")
+}
+
+model KnowledgeFeedback {
+  articleId String
+  article   KnowledgeArticle @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  helpful   Boolean
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  @@id([articleId, userId])
+  @@index([userId])
+  @@map("knowledge_feedback")
+}
+
+model CalendarCategory {
+  id        String        @id @default(cuid())
+  name      String        @unique
+  color     CalendarColor @default(BLUE)
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+
+  tasks CalendarTask[]
+
+  @@map("calendar_categories")
+}
+
+model CalendarTask {
+  id          String            @id @default(cuid())
+  title       String
+  notes       String?
+  categoryId  String?
+  category    CalendarCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  machineId   String?
+  machine     Machine?          @relation(fields: [machineId], references: [id], onDelete: SetNull)
+  servicerId  String?
+  servicer    Servicer?         @relation(fields: [servicerId], references: [id], onDelete: SetNull)
+  assigneeId  String?
+  assignee    User?             @relation("CalendarAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
+  date        DateTime          @db.Date
+  startMinute Int?
+  endMinute   Int?
+  recurrenceUnit     RecurrenceUnit?
+  recurrenceInterval Int             @default(1)
+  recurrenceUntil    DateTime?       @db.Date
+  createdById String?
+  createdBy   User?             @relation("CalendarCreator", fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  completions CalendarCompletion[]
+
+  @@index([date])
+  @@index([categoryId])
+  @@index([machineId])
+  @@index([servicerId])
+  @@index([assigneeId])
+  @@index([createdById])
+  @@map("calendar_tasks")
+}
+
+model CalendarCompletion {
+  id             String       @id @default(cuid())
+  taskId         String
+  task           CalendarTask @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  occurrenceDate DateTime     @db.Date
+  completedById  String?
+  completedBy    User?        @relation(fields: [completedById], references: [id], onDelete: SetNull)
+  completedAt    DateTime     @default(now())
+
+  @@unique([taskId, occurrenceDate])
+  @@index([completedById])
+  @@map("calendar_completions")
+}
+
+model Notification {
+  id        String              @id @default(cuid())
+  ticketId  String
+  ticket    Ticket              @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  channel   NotificationChannel
+  recipient String
+  subject   String?
+  body      String?
+  status    NotificationStatus  @default(PENDING)
+  attempts  Int                 @default(0)
+  audience  NotificationAudience @default(SERVICER)
+  key       String              @default("servicer")
+  createdAt DateTime            @default(now())
+  updatedAt DateTime            @updatedAt
+
+  deliveryAttempts DeliveryAttempt[]
+
+  @@unique([ticketId, channel, key])
+  @@index([status])
+  @@map("notifications")
+}
+
+model DeliveryAttempt {
+  id             String         @id @default(cuid())
+  notificationId String
+  notification   Notification   @relation(fields: [notificationId], references: [id], onDelete: Cascade)
+  attemptNumber  Int
+  outcome        AttemptOutcome
+  error          String?
+  durationMs     Int?
+  createdAt      DateTime       @default(now())
+
+  @@unique([notificationId, attemptNumber])
+  @@index([notificationId])
+  @@map("delivery_attempts")
+}
+
+model ApiKey {
+  id         String    @id @default(cuid())
+  hashedKey  String    @unique
+  label      String
+  createdAt  DateTime  @default(now())
+  lastUsedAt DateTime?
+
+  @@map("api_keys")
+}
+
+model ExternalCode {
+  id           String           @id @default(cuid())
+  kind         ExternalCodeKind
+  code         String
+  label        String?
+  machineId    String?
+  machine      Machine?         @relation(fields: [machineId], references: [id], onDelete: SetNull)
+  departmentId String?
+  department   Department?      @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+  categoryId   String?
+  category     FaultCategory?   @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  userId       String?
+  user         User?            @relation(fields: [userId], references: [id], onDelete: SetNull)
+  seenCount    Int              @default(0)
+  lastSeenAt   DateTime?
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+
+  @@unique([kind, code])
+  @@index([machineId])
+  @@index([departmentId])
+  @@index([categoryId])
+  @@index([userId])
+  @@map("external_codes")
+}
+
+model TicketComment {
+  id        String   @id @default(cuid())
+  ticketId  String
+  ticket    Ticket   @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  authorId  String?
+  author    User?    @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  body      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([ticketId, createdAt])
+  @@index([authorId])
+  @@map("ticket_comments")
+}

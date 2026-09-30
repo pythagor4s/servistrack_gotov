@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: servistrack_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: servis
+      POSTGRES_PASSWORD: servis
+      POSTGRES_DB: servis_track
+    ports:
+      - "5433:5432"
+    volumes:
+      - servistrack_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U servis -d servis_track"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  servistrack_pgdata:

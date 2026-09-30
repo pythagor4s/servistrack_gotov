@@ -1,0 +1,1702 @@
+[
+ {
+  "id": "kb_001",
+  "title": "EFI VUTEk: čiščenje zamašene tiskalne glave",
+  "body": "## Kdaj čistiti in kako daleč iti\n\nČiščenje porabi črnilo, zato se stopnjuje in ne začne pri najmočnejši stopnji.\n\n1. **Test šob.** Vedno najprej. Brez njega ne veš, kaj popravljaš.\n2. **Normalno čiščenje.** Ponovi največ trikrat.\n3. **Globinsko čiščenje.** Samo, če normalno ne pomaga.\n4. **Ročno brisanje.** Brezvlaknata krpa in servisna tekočina, po plošči glave v eno smer.\n5. **Purge in ponovni test.**\n\n> Preden karkoli čistiš, preveri nivo v podtanku. Prazen podtank izgleda enako\n> kot zamašena glava.",
+  "tags": [
+   "šobe",
+   "čiščenje glav",
+   "test šob"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_glave",
+  "categoryName": "Tiskalne glave in črnilo",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": true,
+  "views": 240,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1772451540000
+ },
+ {
+  "id": "kb_002",
+  "title": "Mutoh XpertJet 1682SR Pro: odprava prog na sijajnem materialu",
+  "body": "Proge na razmiku enega koraka podajanja so skoraj vedno napaka podajanja, ne glave.\n\n1. Umeri podajanje na **istem** materialu, ki dela težave.\n2. Za tanke in ravne medije nastavi višino glave na `LOW`.\n3. Ponovi dvosmerno poravnavo.\n4. Shrani nastavitve v profil materiala, da se ne izgubijo.",
+  "tags": [
+   "proge",
+   "podajanje",
+   "sijajni material"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_kakovost",
+  "categoryName": "Kakovost tiska in barve",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": true,
+  "views": 180,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1772528400000
+ },
+ {
+  "id": "kb_003",
+  "title": "GongZheng H2513GN: ponastavitev napake črpalke črnila",
+  "body": "Napaka `E-042` pomeni, da senzor nivoja v podtanku ne vidi črnila.\n\n1. Stroj v `SERVICE`, izklop grelcev.\n2. Odzrači dovod, dokler ne teče brez mehurčkov.\n3. Napolni podtank do senzorja.\n4. `Menu > Maintenance > Reset error`.\n5. Dvakrat odtisni test šob.\n\n> Rezervoarja ne praznimo do dna. Menjava se opravi, preden nivo pade pod četrtino.",
+  "tags": [
+   "e-042",
+   "podtank",
+   "črpalka črnila",
+   "senzor nivoja"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_glave",
+  "categoryName": "Tiskalne glave in črnilo",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 120,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1772628600000
+ },
+ {
+  "id": "kb_004",
+  "title": "Ravnanje z materialom: manj udarcev glave ob toge plošče",
+  "body": "Trk glave je najdražja okvara na tiskalniku. Pravila so kratka:\n\n- Ploščo pred tiskom preveri za privzdignjene robove in zvitost.\n- Za toge materiale začni z višino glave `HIGH`.\n- Prvi meter opazuj, šele nato spusti glavo.\n- Senzor višine preveri ob tedenskem pregledu.",
+  "tags": [
+   "trk glave",
+   "višina glave",
+   "togi material"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_glave",
+  "categoryName": "Tiskalne glave in črnilo",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 75,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1772695500000
+ },
+ {
+  "id": "kb_005",
+  "title": "Esko Kongsberg C24: povrnitev podtlaka na mizi",
+  "body": "## Iskanje izgube podtlaka\n\n1. Prekrij mizo s folijo cono za cono in primerjaj manometer.\n2. Poslušaj ob robovih mize, puščanje se sliši.\n3. Preveri conske ventile, prah PVC jih zlepi.\n4. Izpihaj filter turbine.\n5. Poškodovano cev ali tesnilo zamenjaj, ne krpaj.\n\nZa majhne kose uporabi masko iz folije, da podtlak deluje samo pod materialom.",
+  "tags": [
+   "podtlak",
+   "vakuumska miza",
+   "cone",
+   "tesnilo"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_zrak",
+  "categoryName": "Podtlak, zrak in pnevmatika",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 160,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1772796660000
+ },
+ {
+  "id": "kb_006",
+  "title": "Zünd: ponovno umerjanje oscilirnega orodja",
+  "body": "1. Zamenjaj rezilo, če je bilo v uporabi več kot ~40 delovnih ur.\n2. Umeri globino na odpadnem kosu **istega** materiala.\n3. Če se material topi, zniža hitrost, ne dvigaj oscilacije.\n4. Vodila osi Z očisti in namaži po predpisu.",
+  "tags": [
+   "oscilirno orodje",
+   "rezilo",
+   "globina reza"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_rezanje",
+  "categoryName": "Rezanje in orodja",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 150,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1772897940000
+ },
+ {
+  "id": "kb_007",
+  "title": "Summa S-Class: nastavitev odmika tangencialnega noža",
+  "body": "Preskakovanje v krivinah je znak napačnega odmika noža.\n\n1. Zaženi `Cut test` s kvadratom in krogom.\n2. Odmik popravljaj po 0,05 mm, dokler krog ni gladek.\n3. Preveri tudi globino, prevelika globina posnema isto napako.\n4. Shrani nastavitev v profil materiala.",
+  "tags": [
+   "tangencialni nož",
+   "odmik noža",
+   "cut test"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_rezanje",
+  "categoryName": "Rezanje in orodja",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 90,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1772973660000
+ },
+ {
+  "id": "kb_008",
+  "title": "AXYZ Infinite: hlajenje vretena rezkarja",
+  "body": "Izklop zaradi termične zaščite pomeni slab odvod toplote, ne prekratke obdelave.\n\n- Preveri nivo hladilnega sredstva.\n- Izpiraj krog, dokler tekočina ne odteka čista.\n- Zamenjaj filter hladilnega kroga.\n- Očisti radiator in ventilator, prah se nabira hitro.\n- Odsesavanje usmeri tako, da prah ne pada na radiator.",
+  "tags": [
+   "vreteno",
+   "hladilni krog",
+   "termična zaščita"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_toplota",
+  "categoryName": "Toplota, sušenje in UV",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 70,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773046980000
+ },
+ {
+  "id": "kb_009",
+  "title": "Bürkle: odprava mehurčkov v UV laku",
+  "body": "Mehurčki na eni strani pomenijo neenakomeren pritisk nanašalnih valjev.\n\n1. Izmeri pritisk s testnim trakom na obeh straneh.\n2. Ekscenter nastavljaj po pol obrata, dokler odtis ni enak.\n3. Preveri viskoznost laka, prenizka zajema zrak.\n4. Prve tri plošče pelji počasneje.",
+  "tags": [
+   "mehurčki",
+   "uv lak",
+   "pritisk valjev"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_mehanika",
+  "categoryName": "Mehanika in pogon",
+  "departmentId": "dep_laminating",
+  "departmentName": "Laminiranje in dodelava",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 130,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773126840000
+ },
+ {
+  "id": "kb_010",
+  "title": "Varjenje PVC: nastavitve temperature za material transparentov",
+  "body": "## Izhodiščne nastavitve po gramaturi\n\n- **450 g/m²:** 480 °C, 6 m/min\n- **650 g/m²:** 540 °C, 4 m/min\n- **900 g/m²:** 560 °C, 3 m/min\n\nMerilo dobrega vara: pri obremenitvi se pretrga **material poleg vara**, ne var sam.\nVsak nov material preizkusi na odpadnem traku, preden greš v naklado.",
+  "tags": [
+   "varjenje",
+   "temperatura",
+   "gramatura"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_toplota",
+  "categoryName": "Toplota, sušenje in UV",
+  "departmentId": "dep_welding",
+  "departmentName": "Varjenje PVC",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 200,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773228000000
+ },
+ {
+  "id": "kb_011",
+  "title": "Miller Weldmaster: iskanje napake na nožnem stikalu",
+  "body": "Nožno stikalo je najpogostejša napaka, ker kabel leži na tleh.\n\n1. Preveri kabel tik ob vtikaču, tam se prelomi.\n2. Preizkusi z rezervnim stikalom, preden razstavljaš krmilje.\n3. Kabel speljí tako, da ni v poti vozičku.",
+  "tags": [
+   "nožno stikalo",
+   "kabel",
+   "krmilje"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_elektrika",
+  "categoryName": "Elektrika in senzorji",
+  "departmentId": "dep_welding",
+  "departmentName": "Varjenje PVC",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 60,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773327180000
+ },
+ {
+  "id": "kb_012",
+  "title": "Kala: menjava noža in nastavitev pritiska po mediju",
+  "body": "Razcefran rob je skoraj vedno nož ali pritisk, ne hitrost.\n\n1. Nož osi X zamenjaj po ~40 delovnih urah, tudi če rez izgleda še sprejemljiv.\n2. Pritisk nastavi po tabeli za gramaturo medija, ne na občutek.\n3. Nastavitev shrani v profil medija, da je ni treba iskati znova.\n4. Kontrolni meter odrezi in preveri rob po celotni širini.",
+  "tags": [
+   "nož",
+   "razcefran rob",
+   "pritisk noža"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_rezanje",
+  "categoryName": "Rezanje in orodja",
+  "departmentId": "dep_laminating",
+  "departmentName": "Laminiranje in dodelava",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 95,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773408300000
+ },
+ {
+  "id": "kb_013",
+  "title": "Stroj za povezovanje: odprava zagozditve traku",
+  "body": "1. Izklopi stroj in odstrani zagozden trak v celoti.\n2. Očisti in izpihaj podajalno pot, ostanki traku se nabirajo.\n3. Nastavi napetost podajanja za širino traku.\n4. Preveri obrabo podajalnega kolesa.",
+  "tags": [
+   "zagozditev",
+   "trak",
+   "podajalno kolo"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_material",
+  "categoryName": "Material in podajanje",
+  "departmentId": "dep_packaging",
+  "departmentName": "Pakiranje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 85,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773487740000
+ },
+ {
+  "id": "kb_014",
+  "title": "Povezovalnik: spoj ne drži, čeprav se trak podaja",
+  "body": "- Očisti grelno ploščico, zogleneli ostanki traku so najpogostejši vzrok.\n- Preveri čas varjenja, po posegih pogosto ostane prekratek.\n- Preveri napetost traku po menjavi kolutov.\n- Po čiščenju izvedi ~20 ciklov in preveri, ali vsi spoji držijo.",
+  "tags": [
+   "spoj",
+   "grelna ploščica",
+   "čas varjenja"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_toplota",
+  "categoryName": "Toplota, sušenje in UV",
+  "departmentId": "dep_packaging",
+  "departmentName": "Pakiranje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 65,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773588480000
+ },
+ {
+  "id": "kb_015",
+  "title": "Systemair AHU: ponastavitev po alarmu filtra",
+  "body": "1. Odčitaj padec tlaka na filtru in ga primerjaj z mejo.\n2. Zamenjaj filtra na dovodu in odvodu (`F7` in `M5`).\n3. Ponastavi števec ur filtra, sicer alarm pride prezgodaj nazaj.\n4. Ponastavi alarm in preveri pretok.\n\n> V tiskarni se filtri zamašijo hitreje. Interval je štiri mesece, ne šest.",
+  "tags": [
+   "prezračevanje",
+   "filter",
+   "alarm"
+  ],
+  "type": "FACILITY",
+  "categoryId": "fc_vzdrzevanje",
+  "categoryName": "Redno vzdrževanje",
+  "departmentId": "dep_facilities",
+  "departmentName": "Klima in objekt",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 140,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773674280000
+ },
+ {
+  "id": "kb_016",
+  "title": "Kompresor: kaj preveriti, ko tlak pada",
+  "body": "Po vrsti, od najcenejšega proti najdražjemu:\n\n1. **Sesalni filter.** Zamašen filter je najpogostejši vzrok.\n2. **Puščanje v liniji.** Poslušaj ob spojih ali uporabi ultrazvočni detektor.\n3. **Kondenz.** Izpusti posodo.\n4. **Sušilnik.** Preveri delovanje.\n5. Šele nato sumi na kompresor sam.",
+  "tags": [
+   "kompresor",
+   "tlak",
+   "sesalni filter",
+   "puščanje"
+  ],
+  "type": "FACILITY",
+  "categoryId": "fc_zrak",
+  "categoryName": "Podtlak, zrak in pnevmatika",
+  "departmentId": "dep_facilities",
+  "departmentName": "Klima in objekt",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 95,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773727620000
+ },
+ {
+  "id": "kb_017",
+  "title": "Zataknjena vrsta RIP: ponovni zagon tiskalne storitve",
+  "body": "1. `Caldera > Spooler > Pause`\n2. Poišči posel, ki blokira vrsto, običajno je največji ali poškodovan.\n3. Izbriši ga in shrani ime za primer, da se ponovi.\n4. `Resume` in počakaj, da se vrsta izprazni.",
+  "tags": [
+   "caldera",
+   "spooler",
+   "vrsta tiskanja"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_programska",
+  "categoryName": "Programska oprema in RIP",
+  "departmentId": "dep_prepress",
+  "departmentName": "Priprava in RIP",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 175,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773846780000
+ },
+ {
+  "id": "kb_018",
+  "title": "Obnovitev manjkajočega ICC profila materiala",
+  "body": "Profili so na NAS v mapi `\\\\nas\\posli\\_profili`.\n\n1. Kopiraj `.icc` nazaj v profilno mapo sistema.\n2. Registriraj profil v Calderi.\n3. Odtisni kontrolni klin in primerjaj z arhivskim odtisom.",
+  "tags": [
+   "icc",
+   "profil",
+   "caldera"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_kakovost",
+  "categoryName": "Kakovost tiska in barve",
+  "departmentId": "dep_prepress",
+  "departmentName": "Priprava in RIP",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 105,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773902220000
+ },
+ {
+  "id": "kb_019",
+  "title": "Umerjanje barv: postopek od tiskalnika do odtisa",
+  "body": "## Vrstni red je pomemben\n\n1. **Linearizacija** na trenutni seriji črnila.\n2. **Omejitev nanosa črnila** za material.\n3. **Gradnja profila** in shranjevanje pod imenom materiala.\n4. **Umerjanje zaslona** v pripravi, 120 cd/m².\n5. **Kontrolni klin** na začetku in koncu naklade.\n\n> Profil je vezan na serijo črnila in na material. Ob menjavi katerega koli\n> od obeh se linearizacija ponovi.",
+  "tags": [
+   "linearizacija",
+   "icc",
+   "umerjanje barv"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_kakovost",
+  "categoryName": "Kakovost tiska in barve",
+  "departmentId": "dep_prepress",
+  "departmentName": "Priprava in RIP",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 160,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1774001160000
+ },
+ {
+  "id": "kb_020",
+  "title": "Ponovna povezava delovne postaje z mapo poslov",
+  "body": "1. `ipconfig /flushdns`\n2. Preslikaj `Z:` na `\\\\nas\\posli` z možnostjo **Ponovno poveži ob prijavi**.\n3. Preveri pisanje, ne samo branje.\n4. Če postaja ne vidi strežnika, preveri, ali ni ostala na SMB1.",
+  "tags": [
+   "nas",
+   "smb",
+   "mapa poslov"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 220,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1774107060000
+ },
+ {
+  "id": "kb_021",
+  "title": "Zahteva za nov uporabniški račun",
+  "body": "Ob ustvarjanju računa se vedno določi:\n\n- skupina (Pakiranje, Dodelava, Priprava, Pisarna)\n- dostop do `\\\\nas\\posli` in do arhiva\n- tiskalniki\n- datum poteka, če gre za sezonsko delo\n\nGeslo se preda osebno in se zamenja ob prvi prijavi.",
+  "tags": [
+   "uporabniški račun",
+   "dostop"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 95,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1774184460000
+ },
+ {
+  "id": "kb_022",
+  "title": "Povezava na pisarniški VPN",
+  "body": "1. Uvozi profil `vtisk-vpn`.\n2. Prijavi se s službenim računom.\n3. Preveri dostop do `\\\\nas\\posli`.\n\nSočasnih povezav je omejeno na dve. Če se ne moreš prijaviti, je verjetno\nkdo drug že povezan.",
+  "tags": [
+   "vpn",
+   "oddaljeni dostop"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": null,
+  "pinned": false,
+  "views": 210,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1774248240000
+ },
+ {
+  "id": "kb_t001",
+  "title": "Napaka E-042 na črpalki črnila ob zagonu",
+  "body": "## Napaka E-042 (podtlak v podtanku)\n\nStroj je ob jutranjem zagonu javil `E-042` in se ustavil pred čiščenjem glav.\n\n### Ugotovitev\nV dovodu iz glavnega rezervoarja v podtank cyana je bil zračni čep. Senzor nivoja\nje zato videl prazen podtank, čeprav je bil rezervoar poln.\n\n### Postopek\n1. Stroj v stanje `SERVICE` in izklop grelcev glave.\n2. Zaprt ventil dovoda, odvit priključek na podtanku cyana.\n3. Sistem odzračen z ročno črpalko, dokler ni črnilo teklo brez mehurčkov.\n4. Priključek zategnjen, ventil odprt, podtank napolnjen do senzorja.\n5. Napaka ponastavljena preko `Menu > Maintenance > Reset error`.\n6. Test šob odtisnjen dvakrat, drugi odtis čist.\n\n> Zračni čep se je pojavil zato, ker je bil rezervoar v petek izpraznjen do dna.\n> Menjava rezervoarja se odslej opravi, preden nivo pade pod četrtino.\n\nServiser je ob obisku zamenjal še obrabljeno tesnilo na hitrem priključku.",
+  "tags": [
+   "e-042",
+   "podtank",
+   "zračni čep"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_glave",
+  "categoryName": "Tiskalne glave in črnilo",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng"
+  ],
+  "machineLabel": "GongZheng H2513GN",
+  "ticketId": "tkt_001",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1772699280000
+ },
+ {
+  "id": "kb_t002",
+  "title": "Nov uporabniški račun za operaterja v pakirnici",
+  "body": "Ustvarjen račun `mkrajnc2` in dodan v skupino **Pakiranje**.\n\n- Dostop do mape `\\\\nas\\posli` (branje in pisanje)\n- Dostop do tiskalnika nalepk v pakirnici\n- Brez dostopa do priprave in RIP postaje\n\nGeslo je bilo predano osebno, ob prvi prijavi ga je moral zamenjati.",
+  "tags": [
+   "uporabniški račun",
+   "dostop"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_002",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1772628960000
+ },
+ {
+  "id": "kb_t003",
+  "title": "Podtlak ne drži pole na conah 3 in 4",
+  "body": "## Izguba podtlaka na mizi\n\nPola 2 x 3 m se je med rezanjem premikala, na conah 3 in 4 je manometer kazal\nmanj kot polovico delovne vrednosti.\n\n### Diagnostika\n1. Miza prekrita s folijo, cona za cono. Cone 1, 2, 5 in 6 so držale.\n2. Ob coni 3 se je pri polnem podtlaku slišalo sikanje pod robom mize.\n3. Odstranjena stranska plošča: dovodna cev je bila počena na kolenu.\n\n### Popravilo\n- Zamenjan odsek cevi in obe objemki.\n- Očiščeni conski ventili, na dveh je bil prah zlepljen s prahom PVC.\n- Filter turbine izpihan in ponovno vstavljen.\n- Izmerjen podtlak po conah, vse v mejah po servisni knjigi.\n\nPoraba turbine se je po popravilu vrnila na običajno vrednost.",
+  "tags": [
+   "podtlak",
+   "vakuumska miza",
+   "cone",
+   "cev"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_zrak",
+  "categoryName": "Podtlak, zrak in pnevmatika",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_kongsberg"
+  ],
+  "machineLabel": "Esko Kongsberg C24",
+  "ticketId": "tkt_003",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773157200000
+ },
+ {
+  "id": "kb_t005",
+  "title": "Izpadanje šob na tiskalni glavi 4",
+  "body": "## Izpad šob, glava 4\n\nTest šob je pokazal ~15 % izpadlih šob v magenti, v tisku vidne svetle proge.\n\n### Postopek\n1. Trije cikli **normalnega** čiščenja, brez izboljšanja.\n2. Globinsko čiščenje (`Deep clean`), izboljšanje na ~5 %.\n3. Ročno brisanje plošče glave z brezvlaknato krpo in servisno tekočino.\n4. Purge in test šob: čisto.\n\n> Globinsko čiščenje porabi znatno količino črnila. Preden ga zaženeš, poglej,\n> ali gre res za zamašitev in ne za prazen podtank.",
+  "tags": [
+   "šobe",
+   "čiščenje glav",
+   "proge"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_glave",
+  "categoryName": "Tiskalne glave in črnilo",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_vutek1"
+  ],
+  "machineLabel": "EFI VUTEk GS3250LX Pro",
+  "ticketId": "tkt_005",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773059040000
+ },
+ {
+  "id": "kb_t006",
+  "title": "Zasilna razsvetljava odpoveduje v rezalnem hodniku",
+  "body": "Pregledane vse enote na tokokrogu zasilne razsvetljave v hodniku.\n\n- Dve enoti nista svetili niti pri testu: zamenjani bateriji `4.8V 1.5Ah NiCd`\n- Pri tretji je bila zrahljana sponka, ponovno vpeta\n- Opravljen funkcijski test celotnega tokokroga, vse enote svetijo predpisan čas\n\nNaslednji redni test je vpisan v vzdrževalni koledar.",
+  "tags": [
+   "zasilna razsvetljava",
+   "baterija"
+  ],
+  "type": "FACILITY",
+  "categoryId": "fc_objekt",
+  "categoryName": "Objekt in varnost",
+  "departmentId": "dep_facilities",
+  "departmentName": "Klima in objekt",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_006",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773325980000
+ },
+ {
+  "id": "kb_t007",
+  "title": "Mehurčki na laminatu čez celotno širino role",
+  "body": "Mehurčki so se pojavljali enakomerno po širini, kar kaže na pritisk valjev in ne na material.\n\n1. Preverjen pritisk na obeh straneh: levo `4,2 bar`, desno `3,1 bar`.\n2. Desna stran doravnana na `4,2 bar` po lestvici na ohišju.\n3. Valja očiščena s špiritom, ker se je na desnem nabral sloj lepila.\n4. Testni meter brez mehurčkov, nato ponovljeno še na sijajni foliji.\n\n> Razlika v pritisku se nabere počasi, zato je ne opaziš, dokler ni že vidna na izdelku.\n> Odslej se pritisk odčita ob ponedeljkovem zagonu.",
+  "tags": [
+   "mehurčki",
+   "laminat",
+   "pritisk valjev"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_mehanika",
+  "categoryName": "Mehanika in pogon",
+  "departmentId": "dep_laminating",
+  "departmentName": "Laminiranje in dodelava",
+  "machineIds": [
+   "mac_burkle"
+  ],
+  "machineLabel": "Bürkle UV-Liquid Coating Line 1300",
+  "ticketId": "tkt_007",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773652920000
+ },
+ {
+  "id": "kb_t009",
+  "title": "Oscilirno orodje pušča razcefran rob v kartonu",
+  "body": "## Razcefran rez v valovitem kartonu\n\n### Vzrok\nRezilo `EOT-1` je bilo v uporabi 40 delovnih ur, konica je bila zaokrožena.\n\n### Postopek\n1. Zamenjano rezilo, uporabljen nov `EOT-1`.\n2. Ponovno umerjena globina reza na testnem kosu istega kartona.\n3. Hitrost znižana s 60 na 45 m/min, ker se pri višji rob greje.\n4. Odrezanih pet testnih kosov, rob čist na vseh.\n\nRezila se odslej beležijo ob menjavi, da je obraba vidna vnaprej.",
+  "tags": [
+   "rezilo",
+   "eot-1",
+   "razcefran rob",
+   "karton"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_rezanje",
+  "categoryName": "Rezanje in orodja",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_kongsberg"
+  ],
+  "machineLabel": "Esko Kongsberg C24",
+  "ticketId": "tkt_009",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1773762420000
+ },
+ {
+  "id": "kb_t011",
+  "title": "Proge na sijajnem in backlit materialu",
+  "body": "## Vodoravne proge na sijajnih medijih\n\nNa mat materialih tiska čisto, na sijajnem in backlit se pojavijo proge na vsakih\n~4 cm, kar ustreza enemu koraku podajanja.\n\n### Popravilo\n1. Umerjanje podajanja (`Media feed calibration`) na istem materialu, ki je delal težave.\n2. Popravek podajanja `+0.18 %`.\n3. Višina glave prestavljena z `HIGH` na `LOW`, ker je material tanek in raven.\n4. Ponovno umerjena dvosmerna poravnava.\n\nTestni odtis 1 x 1 m brez prog. Nastavitev shranjena v profil `backlit_pro`.",
+  "tags": [
+   "proge",
+   "podajanje",
+   "backlit"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_kakovost",
+  "categoryName": "Kakovost tiska in barve",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_mutoh"
+  ],
+  "machineLabel": "Mutoh XpertJet 1682SR Pro",
+  "ticketId": "tkt_011",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1774077120000
+ },
+ {
+  "id": "kb_t014",
+  "title": "Rob reza je razcefran po celotni dolžini role",
+  "body": "Rez je bil čist na začetku role in vse slabši proti koncu.\n\n### Vzrok\nNož osi X je bil obrabljen, poleg tega je bil pritisk noža nastavljen za medij,\nki je bil dvakrat tanjši od tega v stroju.\n\n### Postopek\n1. Zamenjan nož osi X, star odložen v zabojnik za rabljene rezila.\n2. Pritisk nastavljen po tabeli za `banner 510 g`.\n3. Preverjen kot noža, odstopanje v mejah.\n4. Odrezan kontrolni meter, rob čist po celotni širini.\n\n> Nože menja vzdrževanje, ne operater. Nastavitev pritiska je vezana na medij in\n> je zapisana v profilu, ne v glavi operaterja.",
+  "tags": [
+   "nož",
+   "razcefran rob",
+   "pritisk noža"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_rezanje",
+  "categoryName": "Rezanje in orodja",
+  "departmentId": "dep_laminating",
+  "departmentName": "Laminiranje in dodelava",
+  "machineIds": [
+   "mac_kala"
+  ],
+  "machineLabel": "Kala KalaXY Pro",
+  "ticketId": "tkt_014",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1774365780000
+ },
+ {
+  "id": "kb_t015",
+  "title": "Oscilirno orodje se ustavlja v 10 mm peni",
+  "body": "## Zaustavljanje orodja EOT v peni\n\nOrodje se je med rezom 10 mm PVC pene ustavilo in javilo preobremenitev pogona Z.\n\n### Ugotovitev serviserja\nLežaj v glavi orodja je bil suh, oscilacija je imela povečan upor. Ob tem je bilo\nrezilo pregreto in se je taljena pena nabirala na njem.\n\n### Opravljeno\n- Zamenjana glava orodja (servisni komplet `ZND-EOT-SRV`)\n- Vstavljeno novo rezilo `Z16`\n- Očiščena vodila osi Z in namazana po predpisu\n- Hitrost oscilacije prilagojena materialu\n\nPo popravilu je bil rez čist in orodje ni več grelo materiala.",
+  "tags": [
+   "oscilirno orodje",
+   "ležaj",
+   "pena"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_rezanje",
+  "categoryName": "Rezanje in orodja",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_zund1"
+  ],
+  "machineLabel": "Zünd G3 3XL-3200",
+  "ticketId": "tkt_015",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1775113140000
+ },
+ {
+  "id": "kb_t017",
+  "title": "Mehurčki v UV laku po nanosu",
+  "body": "## Mehurčki v nanosu laka\n\n### Vzrok\nPritisk nanašalnega valja je bil na levi strani nižji kot na desni, zato je bil\nsloj laka neenakomeren in je na tanjši strani zajemal zrak.\n\n### Postopek\n1. Izmerjen pritisk na obeh straneh s testnim trakom.\n2. Levi ekscenter nastavljen za pol obrata, dokler ni bil odtis traku enak na obeh straneh.\n3. Preverjena viskoznost laka; po dolivanju je bila pod predpisano in je bila korigirana.\n4. Hitrost znižana na 4 m/min za prve tri plošče, dokler nanos ni bil enakomeren.\n\nNanos je bil po nastavitvi gladek po celotni širini, brez mehurčkov po UV sušenju.",
+  "tags": [
+   "mehurčki",
+   "uv lak",
+   "pritisk valjev"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_mehanika",
+  "categoryName": "Mehanika in pogon",
+  "departmentId": "dep_laminating",
+  "departmentName": "Laminiranje in dodelava",
+  "machineIds": [
+   "mac_burkle"
+  ],
+  "machineLabel": "Bürkle UV-Liquid Coating Line 1300",
+  "ticketId": "tkt_017",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1774704540000
+ },
+ {
+  "id": "kb_t019",
+  "title": "Nezanesljivo zaznavanje širine medija",
+  "body": "Senzor širine medija je bil zaprašen.\n\n1. Senzor očiščen s stisnjenim zrakom in mehko krtačo.\n2. Preverjeno zaznavanje pri treh različnih širinah role.\n3. Zaznavanje zanesljivo pri vseh.",
+  "tags": [
+   "senzor širine",
+   "zaznavanje medija"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_elektrika",
+  "categoryName": "Elektrika in senzorji",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_vutek1"
+  ],
+  "machineLabel": "EFI VUTEk GS3250LX Pro",
+  "ticketId": "tkt_019",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1775110260000
+ },
+ {
+  "id": "kb_t020",
+  "title": "Disk na delovni postaji v pripravi je poln",
+  "body": "## Poln sistemski disk (C:)\n\nPostaja je javljala manj kot 2 GB prostora, Illustrator se ni več zagnal.\n\n### Opravljeno\n1. Počiščena mapa `%TEMP%` in začasne datoteke Adobe (`~28 GB`).\n2. Predpomnilnik Calderinega predogleda premaknjen na disk `D:`.\n3. Stari posli, starejši od 90 dni, arhivirani na NAS in odstranjeni z lokalnega diska.\n4. Vklopljeno opozorilo pri manj kot 15 GB prostora.\n\n> Delovne datoteke sodijo na `\\\\nas\\posli`, ne na namizje. Postaje nimajo varnostne\n> kopije lokalnega diska.",
+  "tags": [
+   "disk",
+   "prostor na disku"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_020",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1775291700000
+ },
+ {
+  "id": "kb_t021",
+  "title": "Naprava ne prepozna orodja v vpenjalu 2",
+  "body": "Kontakti na vpenjalu 2 so bili prašni, zato krmilnik ni prebral čipa orodja.\n\n1. Orodje odstranjeno, kontakti očiščeni s kontaktnim čistilom.\n2. Vstavljeno nazaj, orodje prepoznano takoj.\n3. Preverjeni še kontakti vpenjala 1 in 3, čisti.",
+  "tags": [
+   "vpenjalo",
+   "kontakti",
+   "čip orodja"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_elektrika",
+  "categoryName": "Elektrika in senzorji",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_kongsberg"
+  ],
+  "machineLabel": "Esko Kongsberg C24",
+  "ticketId": "tkt_021",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1775129040000
+ },
+ {
+  "id": "kb_t022",
+  "title": "Streha zamaka nad dodelavnimi mizami",
+  "body": "## Zamakanje strehe nad dodelavo\n\nPo dežju je s stropa kapljalo na dve dodelavni mizi, na tleh je bila lužica.\n\n### Ugotovitev\nStrešna obroba ob svetlobniku je bila razpokana na dolžini približno 1,5 m.\nVoda je tekla po nosilcu in kapljala na drugem mestu, zato izvor sprva ni bil očiten.\n\n### Opravljeno\n- Obroba očiščena in zatesnjena s trajno elastičnim kitom\n- Zamenjana dva pritrdilna vijaka z gumijasto podložko\n- Območje posušeno z industrijskim ventilatorjem, mizi prekriti\n- Po naslednjem dežju izveden pregled, suho\n\nSvetlobniki so vpisani v letni pregled strehe.",
+  "tags": [
+   "streha",
+   "zamakanje",
+   "svetlobnik"
+  ],
+  "type": "FACILITY",
+  "categoryId": "fc_objekt",
+  "categoryName": "Objekt in varnost",
+  "departmentId": "dep_facilities",
+  "departmentName": "Klima in objekt",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_022",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1775973840000
+ },
+ {
+  "id": "kb_t023",
+  "title": "Odstopanje barv med PRO in starejšim H2513GN",
+  "body": "Isti posel je na obeh strojih dal opazno različen odtenek v modrih površinah.\n\n### Ugotovitev\nStroja sta imela naložen isti material, a različna profila ICC. PRO je tiskal po\nprivzetem profilu proizvajalca, starejši stroj po profilu, izmerjenem v hiši.\n\n### Postopek\n1. Iz RIP postaje izvožen hišni profil.\n2. Naložen na PRO in nastavljen kot privzeti za ta material.\n3. Odtisnjena kontrolna lestvica na obeh strojih.\n4. Odstopanje po meritvi pod mejo, ki jo tolerirata oba naročnika.\n\nProfil je shranjen pod imenom materiala, ne stroja, da velja za oba.",
+  "tags": [
+   "icc",
+   "odtenek",
+   "profil"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_kakovost",
+  "categoryName": "Kakovost tiska in barve",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng_pro"
+  ],
+  "machineLabel": "GongZheng H2513GN PRO",
+  "ticketId": "tkt_023",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1775543880000
+ },
+ {
+  "id": "kb_t025",
+  "title": "Barva se pri dolgih nakladah pomika v toplo",
+  "body": "## Barvni zdrs pri dolgih nakladah\n\nPri naklade 240 plošč je bila zadnja vidno toplejša od prve. Razlika je bila\nnajvečja v koži in sivinah.\n\n### Vzrok\nMoč UV lučk je med dolgim tekom padla, kar je spremenilo strjevanje črnila in s\ntem končni odtenek. Poleg tega linearizacija ni bila obnovljena od menjave serije\nčrnila.\n\n### Opravljeno\n1. Izmerjena moč UV lučk; obe sta bili pod pragom in sta bili zamenjani.\n2. Izvedena nova linearizacija na trenutni seriji črnila.\n3. Zgrajen nov barvni profil za `akril_bel_3mm`.\n4. Odtisnjen kontrolni klin na prvi, srednji in zadnji plošči naklade.\n\nRazlika med prvo in zadnjo ploščo je bila po popravilu znotraj dopustnega odstopanja.\n\n> Profil je vezan na serijo črnila. Ob menjavi serije je treba linearizacijo ponoviti.",
+  "tags": [
+   "barvni zdrs",
+   "uv lučke",
+   "linearizacija"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_kakovost",
+  "categoryName": "Kakovost tiska in barve",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng_pro"
+  ],
+  "machineLabel": "GongZheng H2513GN PRO",
+  "ticketId": "tkt_025",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1775980440000
+ },
+ {
+  "id": "kb_t026",
+  "title": "Licenca Caldera na RIP postaji je potekla",
+  "body": "Licenca je potekla čez vikend, RIP se je zagnal v načinu samo za branje.\n\n1. Pri dobavitelju pridobljen nov aktivacijski ključ.\n2. Vpisan v `Caldera > Help > License manager`.\n3. Postaja ponovno zagnana, tisk deluje.\n4. Datum poteka vpisan v koledar z opomnikom mesec dni prej.",
+  "tags": [
+   "licenca",
+   "caldera"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_programska",
+  "categoryName": "Programska oprema in RIP",
+  "departmentId": "dep_prepress",
+  "departmentName": "Priprava in RIP",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_026",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1776233160000
+ },
+ {
+  "id": "kb_t029",
+  "title": "Tangencialni nož preskakuje v ostrih krivinah",
+  "body": "## Preskakovanje noža v krivinah\n\n### Postopek\n1. Preverjena globina reza, bila je 0,1 mm pregloboka za folijo.\n2. Ponastavljen odmik tangencialnega noža (`Knife offset`) z 0,45 na 0,50 mm.\n3. Izveden test `Cut test` s kvadratom in krogom.\n4. Popravljena nastavitev shranjena v profil za lito folijo.\n\nKontura je bila po nastavitvi natančna tudi pri radiju 3 mm.",
+  "tags": [
+   "tangencialni nož",
+   "odmik noža",
+   "globina reza"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_rezanje",
+  "categoryName": "Rezanje in orodja",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_summa1"
+  ],
+  "machineLabel": "Summa S2 T140",
+  "ticketId": "tkt_029",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1776267420000
+ },
+ {
+  "id": "kb_t031",
+  "title": "Kapljanje črnila na material med tiskom",
+  "body": "## Kapljanje z glave med tiskom\n\nNa odtisu so se pojavljale posamezne pike, vedno na istem delu širine.\n\n### Vzrok\nNa spodnji strani glave 2 se je nabralo strjeno črnilo, kaplja se je občasno\nodtrgala na material.\n\n### Opravljeno\n1. Glava ročno očiščena z brezvlaknato krpo in servisno tekočino.\n2. Očiščena in preverjena brisalna guma (`wiper`), na robu je bila zarezana. Zamenjana.\n3. Preverjena parkirna postaja, v njej se je nabral gel. Očiščena.\n4. Odtisnjenih 20 m testa brez ene same pike.\n\n> Brisalna guma je potrošni del. Ob vsakem tedenskem čiščenju jo poglej od blizu.",
+  "tags": [
+   "kapljanje",
+   "brisalna guma",
+   "strjeno črnilo"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_glave",
+  "categoryName": "Tiskalne glave in črnilo",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng"
+  ],
+  "machineLabel": "GongZheng H2513GN",
+  "ticketId": "tkt_031",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1776687960000
+ },
+ {
+  "id": "kb_t033",
+  "title": "Var na transparentu ne drži pri 650 g materialu",
+  "body": "## Šibek var na težkem PVC\n\nVar se je pri obremenitvi ločil po robu, material 650 g/m².\n\n### Ugotovitev\nNastavitve so bile prevzete iz recepta za 450 g material. Za težji material je bila\ntemperatura prenizka in hitrost previsoka.\n\n### Nastavitve po popravilu\n- Temperatura zraka dvignjena s 480 na 540 °C\n- Hitrost traku znižana s 6 na 4 m/min\n- Pritisk valjev povečan za eno stopnjo\n\n### Preizkus\nOdrezan testni trak in obremenjen do pretrga. Material se je pretrgal **poleg** vara,\nkar pomeni, da je var močnejši od materiala. To je merilo, ki se uporablja odslej.\n\nRecept shranjen kot `PVC_650_ponjava`.",
+  "tags": [
+   "varjenje",
+   "temperatura",
+   "težki pvc"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_toplota",
+  "categoryName": "Toplota, sušenje in UV",
+  "departmentId": "dep_welding",
+  "departmentName": "Varjenje PVC",
+  "machineIds": [
+   "mac_weldmaster"
+  ],
+  "machineLabel": "Miller Weldmaster T300 Extreme Flex",
+  "ticketId": "tkt_033",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1777039980000
+ },
+ {
+  "id": "kb_t034",
+  "title": "Preflight javi manjkajoče pisave v dokumentu stranke",
+  "body": "Stranka je poslala PDF brez vgnezdenih pisav.\n\n1. Preflight v Acrobatu je pokazal dve manjkajoči pisavi.\n2. Od stranke zahtevan nov izvoz z vgnezdenimi pisavami.\n3. Do prejema je bil posel zadržan, da se ne natisne z nadomestno pisavo.\n\n> Nadomestna pisava spremeni dolžino besedila in s tem prelom. Nikoli ne tiskaj\n> dokumenta, ki v preflightu javi manjkajočo pisavo.",
+  "tags": [
+   "preflight",
+   "pisave",
+   "pdf"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_programska",
+  "categoryName": "Programska oprema in RIP",
+  "departmentId": "dep_prepress",
+  "departmentName": "Priprava in RIP",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_034",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1777021500000
+ },
+ {
+  "id": "kb_t036",
+  "title": "Varnostna kopija na NAS se ni izvedla tri dni zapored",
+  "body": "## Neuspešna varnostna kopija\n\nOpravilo `Hyper Backup` je tri noči zapored javilo napako.\n\n### Vzrok\nCiljni disk je bil poln. Rotacija starih kopij je bila izklopljena pri prejšnji\nnastavitvi in kopije so se nabirale od januarja.\n\n### Opravljeno\n1. Vklopljena rotacija: obdrži zadnjih 14 dnevnih in 8 tedenskih kopij.\n2. Ročno odstranjene kopije, starejše od februarja.\n3. Zagnana kontrolna kopija, končala uspešno.\n4. Vklopljeno obveščanje po e-pošti ob neuspehu.\n\n> Varnostna kopija, ki nikomur ne javi napake, ni varnostna kopija.",
+  "tags": [
+   "nas",
+   "varnostna kopija",
+   "hyper backup"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_036",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1777536900000
+ },
+ {
+  "id": "kb_t038",
+  "title": "Vreteno rezkarja se pregreva in izklaplja",
+  "body": "## Pregrevanje vretena\n\nVreteno se je po ~20 minutah rezkanja izklopilo zaradi termične zaščite.\n\n### Ugotovitev\nHladilni krog je bil zamašen z aluminijastim prahom, pretok je bil močno zmanjšan.\nHladilno sredstvo je bilo tudi pod minimalnim nivojem.\n\n### Opravljeno\n- Krog izpiran, dokler ni tekočina odtekala čista\n- Zamenjan filter hladilnega kroga\n- Dolito hladilno sredstvo do oznake\n- Očiščen radiator in ventilator\n- Izmerjena temperatura po 60 minutah rezkanja: stabilna, brez izklopa\n\nOdsesavanje ob vretenu je bilo prilagojeno, da prah ne pada na radiator.",
+  "tags": [
+   "vreteno",
+   "pregrevanje",
+   "hladilni krog"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_toplota",
+  "categoryName": "Toplota, sušenje in UV",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_axyz"
+  ],
+  "machineLabel": "AXYZ Infinite",
+  "ticketId": "tkt_038",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1778145120000
+ },
+ {
+  "id": "kb_t041",
+  "title": "Zamaščena tla ob liniji za povezovanje",
+  "body": "Iztekanje olja iz reduktorja je puščalo madež na tleh, kar je bilo nevarno za hojo.\n\n1. Tla očiščena z razmaščevalcem in absorbentom.\n2. Ugotovljeno puščanje tesnila reduktorja, ticket za popravilo odprt ločeno.\n3. Do popravila postavljena posoda in opozorilni stožec.",
+  "tags": [
+   "olje",
+   "reduktor",
+   "varnost"
+  ],
+  "type": "FACILITY",
+  "categoryId": "fc_objekt",
+  "categoryName": "Objekt in varnost",
+  "departmentId": "dep_facilities",
+  "departmentName": "Klima in objekt",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_041",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1777910400000
+ },
+ {
+  "id": "kb_t044",
+  "title": "Neenakomerno podajanje role pri težkem banerju",
+  "body": "## Neenakomerno podajanje role\n\nPri roli 500 g/m² je bila dolžina odtisa daljša od nastavljene za ~4 mm na meter,\nmaterial je občasno zdrsnil.\n\n### Ugotovitev serviserja\nPritisni valj je bil obrabljen na sredini, kjer je material najbolj obremenjen.\nNapetost navijalca je bila poleg tega nastavljena za lažje medije.\n\n### Opravljeno\n1. Zamenjan pritisni valj.\n2. Nastavljena napetost odvijalca in navijalca za težke medije.\n3. Ponovno umerjeno podajanje na istem materialu.\n4. Odtisnjen kontrolni meter, izmerjena dolžina znotraj 0,3 mm.\n\n> Umerjanje podajanja velja za material, ne za stroj. Za vsak nov medij ga ponovi.",
+  "tags": [
+   "podajanje",
+   "pritisni valj",
+   "navijalec"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_material",
+  "categoryName": "Material in podajanje",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng"
+  ],
+  "machineLabel": "GongZheng H2513GN",
+  "ticketId": "tkt_044",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1778858700000
+ },
+ {
+  "id": "kb_t045",
+  "title": "Rezalna podloga je zarezana in vleče material",
+  "body": "Podloga je bila po dveh letih globoko zarezana v pasu, kjer se reže največ.\n\n1. Podloga obrnjena za 180°, da se uporabi neobrabljeni del.\n2. Zabeležen datum obračanja, naslednja menjava predvidena čez pol leta.\n3. Preverjena globina reza po obračanju in po potrebi popravljena.",
+  "tags": [
+   "rezalna podloga",
+   "obraba"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_rezanje",
+  "categoryName": "Rezanje in orodja",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_kongsberg"
+  ],
+  "machineLabel": "Esko Kongsberg C24",
+  "ticketId": "tkt_045",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1778596260000
+ },
+ {
+  "id": "kb_t046",
+  "title": "Omrežje v pakirnici večkrat na dan izgubi povezavo",
+  "body": "## Prekinitve omrežja v pakirnici\n\nPostaje v pakirnici so večkrat dnevno za nekaj sekund izgubile povezavo.\n\n### Diagnostika\n1. Na stikalu je bila vrata 12 v stanju `err-disabled` in so se sama povrnila.\n2. Dnevnik stikala je kazal ponavljajoče se napake CRC na istih vratih.\n3. Zamenjan kabel do te postaje, napake so izginile.\n\n### Ugotovitev\nKabel je tekel ob napajanju krčilnika folije in je bil poleg tega priprt z omaro.\nNovo traso je pogodbeni izvajalec speljal po kabelski polici, stran od napajanja.\n\nNapak CRC po zamenjavi ni bilo več teden dni.",
+  "tags": [
+   "stikalo",
+   "crc",
+   "err-disabled",
+   "kabel"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_046",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1779346860000
+ },
+ {
+  "id": "kb_t049",
+  "title": "Toplotni tunel ostaja hladen",
+  "body": "Grelec tunela je bil pregorel, termostat je javljal sobno temperaturo.\n\n1. Izmerjena upornost grelca: prekinjen.\n2. Serviser je zamenjal grelni element in ob tem preveril termostat.\n3. Segrevanje do delovne temperature v 8 minutah, folija se krči enakomerno.",
+  "tags": [
+   "grelec",
+   "toplotni tunel",
+   "termostat"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_toplota",
+  "categoryName": "Toplota, sušenje in UV",
+  "departmentId": "dep_packaging",
+  "departmentName": "Pakiranje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_049",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1779274860000
+ },
+ {
+  "id": "kb_t050",
+  "title": "Klima v tiskarski hali ne hladi",
+  "body": "## Izpad hlajenja v tiskarski hali\n\nTemperatura v hali je dosegla 31 °C, kar je nad mejo za stabilno tiskanje.\n\n### Ugotovitev\nKondenzator na strehi je bil zamašen s prahom in topolovim puhom, tlak na visoki\nstrani je bil previsok in naprava se je varnostno izklapljala.\n\n### Opravljeno\n- Kondenzator očiščen s posebnim čistilom in izpran\n- Preverjeno polnjenje, dopolnjeno hladivo\n- Zamenjani filtri v prezračevalni napravi\n- Ponastavljen alarm in preverjeno delovanje pod polno obremenitvijo\n\nTemperatura v hali se je v štirih urah vrnila na 24 °C.\n\n> Čiščenje kondenzatorja je vpisano v vzdrževalni koledar dvakrat letno,\n> spomladi in po koncu poletja.",
+  "tags": [
+   "klima",
+   "kondenzator",
+   "hlajenje"
+  ],
+  "type": "FACILITY",
+  "categoryId": "fc_objekt",
+  "categoryName": "Objekt in varnost",
+  "departmentId": "dep_facilities",
+  "departmentName": "Klima in objekt",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_050",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1779544260000
+ },
+ {
+  "id": "kb_t052",
+  "title": "Vakuumska cona 1 ne drži manjših kosov",
+  "body": "Manjši kosi so se med rezanjem premikali na coni 1.\n\n1. Preverjeno tesnjenje: rob mize je imel poškodovano tesnilo na dolžini 30 cm.\n2. Serviser je tesnilo zamenjal ob rednem obisku.\n3. Za majhne kose je bila uporabljena maska iz folije, da podtlak deluje le pod materialom.\n4. Kosi so držali tudi pri polni hitrosti.",
+  "tags": [
+   "podtlak",
+   "vakuumska miza",
+   "tesnilo",
+   "maska"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_zrak",
+  "categoryName": "Podtlak, zrak in pnevmatika",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_zund1"
+  ],
+  "machineLabel": "Zünd G3 3XL-3200",
+  "ticketId": "tkt_052",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1780068900000
+ },
+ {
+  "id": "kb_t053",
+  "title": "Postaja v pripravi se zaganja zelo počasi",
+  "body": "## Počasen zagon delovne postaje\n\nZagon je trajal več kot pet minut.\n\n### Opravljeno\n1. Iz samodejnega zagona odstranjeni trije programi, ki jih nihče ne uporablja.\n2. Preverjeno stanje diska SMART: brez napak.\n3. Nameščene čakajoče posodobitve in ponovni zagon.\n4. Onemogočena hitra namestitev, ki je povzročala nedosleden zagon.\n\nZagon po posegu traja pod 60 sekund.",
+  "tags": [
+   "zagon",
+   "posodobitve",
+   "smart"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_053",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1779721320000
+ },
+ {
+  "id": "kb_t054",
+  "title": "Trk glave ob rob togega materiala",
+  "body": "## Trk glave\n\nGlava je zadela ob privzdignjen rob 5 mm plošče. Stroj se je varnostno ustavil.\n\n### Škoda\n- Ena tiskalna glava poškodovana in je puščala\n- Zvita nosilna ploščica vozička\n- Poškodovan senzor višine\n\n### Popravilo (serviser)\n1. Zamenjana tiskalna glava in izvedena poravnava vseh glav.\n2. Zamenjana nosilna ploščica.\n3. Zamenjan in umerjen senzor višine.\n4. Preverjena celotna pot vozička po širini.\n\n### Preventiva\n- Plošče se pred tiskom preverijo za privzdignjene robove\n- Višina glave se za toge materiale nastavi na `HIGH`, dokler ni prvi meter čist\n- Senzor višine se preveri ob tedenskem pregledu\n\n> To je najdražja okvara v tem obdobju. Postopek preverjanja materiala je odslej\n> del navodila za delo na tem stroju.",
+  "tags": [
+   "trk glave",
+   "senzor višine",
+   "togi material"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_glave",
+  "categoryName": "Tiskalne glave in črnilo",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng"
+  ],
+  "machineLabel": "GongZheng H2513GN",
+  "ticketId": "tkt_054",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1780577340000
+ },
+ {
+  "id": "kb_t056",
+  "title": "Trak se zatika na podajalnem kolesu",
+  "body": "Podajalna pot je bila polna prahu in ostankov traku.\n\n1. Pot očiščena in izpihana.\n2. Nastavljena napetost podajanja za trak 12 mm.\n3. Preverjena obraba podajalnega kolesa, še v mejah.\n4. Povezanih 50 paketov brez zastoja.",
+  "tags": [
+   "trak",
+   "podajalno kolo",
+   "zagozditev"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_material",
+  "categoryName": "Material in podajanje",
+  "departmentId": "dep_packaging",
+  "departmentName": "Pakiranje",
+  "machineIds": [
+   "mac_vestil"
+  ],
+  "machineLabel": "Vestil ASM-3123",
+  "ticketId": "tkt_056",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1780397700000
+ },
+ {
+  "id": "kb_t058",
+  "title": "Nož za karton reže poševno na desni polovici mize",
+  "body": "## Poševen rez na desni polovici\n\nRez je bil na levi polovici pravokoten, na desni je odstopal za približno 1,5 mm\nna 1 m dolžine.\n\n### Ugotovitev\nPrečni nosilec je imel na desni strani obrabljeno vodilo, kar je pri višji hitrosti\npovzročilo zamik. Napaka je bila vidna le pri hitrosti nad 40 m/min.\n\n### Opravljeno\n1. Zamenjano vodilo na desni strani.\n2. Preverjena in nastavljena pravokotnost mize.\n3. Ponovljen test kvadrata 1000 x 1000 mm, izmerjeni diagonali se ujemata v 0,4 mm.\n4. Sprejeta hitrost za karton vrnjena na 60 m/min.\n\nPriporočilo serviserja: pregled vodil enkrat letno.",
+  "tags": [
+   "vodilo",
+   "poševen rez",
+   "prečni nosilec"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_mehanika",
+  "categoryName": "Mehanika in pogon",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_kongsberg"
+  ],
+  "machineLabel": "Esko Kongsberg C24",
+  "ticketId": "tkt_058",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1780816440000
+ },
+ {
+  "id": "kb_t060",
+  "title": "Povezovalnik ne zavari traku na spoju",
+  "body": "Trak se je pravilno podal in zategnil, a se na spoju ni sprijel, zato je paket\nostal nepovezan.\n\n### Vzrok\nGrelna ploščica je bila prekrita z zoglenelimi ostanki traku iz prejšnjih ciklov\nin ni več dosegla temperature varjenja.\n\n### Opravljeno\n1. Ploščica očiščena z medeninasto krtačo, stroj v mirovanju in ohlajen.\n2. Preverjen čas varjenja, nastavljen nazaj na tovarniško vrednost.\n3. Preverjena napetost traku po menjavi kolutov.\n4. Izvedenih 20 zaporednih ciklov, vsi spoji držijo.\n\n> Ploščico je treba očistiti ob vsaki menjavi kolutov, sicer se ostanki nabirajo\n> hitreje, kot predvideva navodilo.",
+  "tags": [
+   "grelna ploščica",
+   "spoj",
+   "čas varjenja"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_toplota",
+  "categoryName": "Toplota, sušenje in UV",
+  "departmentId": "dep_packaging",
+  "departmentName": "Pakiranje",
+  "machineIds": [
+   "mac_mh101"
+  ],
+  "machineLabel": "Ausense MH-101A",
+  "ticketId": "tkt_060",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1781347560000
+ },
+ {
+  "id": "kb_t062",
+  "title": "Rezalne konture se ne ujemajo z odtisom",
+  "body": "## Zamik konture glede na odtis\n\nKontura je bila zamaknjena za ~2 mm v smeri X na celotni poli.\n\n### Vzrok\nRegistracijske oznake so bile v datoteki postavljene po starem predlogu, ki ni\nustrezal trenutni nastavitvi kamere na rezalni mizi.\n\n### Opravljeno\n1. Posodobljen predlogar z oznakami na pravilnih razmikih.\n2. Ponovno umerjena kamera na rezalni mizi.\n3. Odtisnjena in odrezana testna pola, odstopanje pod 0,3 mm.\n4. Star predlogar odstranjen iz mape, da ga nihče ne uporabi po pomoti.",
+  "tags": [
+   "kontura",
+   "registracijske oznake",
+   "kamera"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_programska",
+  "categoryName": "Programska oprema in RIP",
+  "departmentId": "dep_prepress",
+  "departmentName": "Priprava in RIP",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_062",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1781246400000
+ },
+ {
+  "id": "kb_t065",
+  "title": "Zamašene šobe po vikendu brez tiska",
+  "body": "Po dveh dneh mirovanja je test šob pokazal izpade v vseh barvah.\n\n1. Izveden cikel čiščenja `normal`, izboljšanje delno.\n2. Ponovljeno še enkrat, test čist.\n3. Vklopljeno samodejno nočno vzdrževanje, da se to ne ponavlja.",
+  "tags": [
+   "šobe",
+   "nočno vzdrževanje",
+   "test šob"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_glave",
+  "categoryName": "Tiskalne glave in črnilo",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng"
+  ],
+  "machineLabel": "GongZheng H2513GN",
+  "ticketId": "tkt_065",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1781534700000
+ },
+ {
+  "id": "kb_t066",
+  "title": "Zunanji disk se odklaplja med prenosom velikih datotek",
+  "body": "Disk se je pri prenosih nad 20 GB odklopil.\n\n1. Zamenjan kabel USB-C, ker je bil star in ohlapen.\n2. Disk priklopljen neposredno v računalnik, ne prek zvezdišča.\n3. Izklopljeno varčevanje z energijo za pogone.\n4. Prenesenih 80 GB brez prekinitve.",
+  "tags": [
+   "zunanji disk",
+   "usb-c",
+   "kabel"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_prepress",
+  "departmentName": "Priprava in RIP",
+  "machineIds": [
+   "mac_mac"
+  ],
+  "machineLabel": "Apple Mac Studio M3 Ultra",
+  "ticketId": "tkt_066",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1781699280000
+ },
+ {
+  "id": "kb_t069",
+  "title": "Bela barva je motna in neenakomerna",
+  "body": "## Motna bela\n\nBela podlaga na prozorni foliji je bila neenakomerna, mestoma siva.\n\n### Vzrok\nBela ni bila dovolj premešana. Sistem za kroženje bele je bil izklopljen po\nzadnjem servisu in ni bil vklopljen nazaj.\n\n### Opravljeno\n1. Vklopljeno kroženje bele in izveden cikel mešanja.\n2. Izvedeno čiščenje glav za belo.\n3. Odtisnjen test polne bele na prozorni foliji, enakomerna.\n4. V dnevni kontrolni list dodana postavka **kroženje bele vklopljeno**.\n\n> Bela se useda hitreje od barvnih črnil. Če stroj stoji čez vikend, se pred prvim\n> poslom izvede cikel mešanja.",
+  "tags": [
+   "bela",
+   "kroženje bele",
+   "motna bela"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_glave",
+  "categoryName": "Tiskalne glave in črnilo",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng"
+  ],
+  "machineLabel": "GongZheng H2513GN",
+  "ticketId": "tkt_069",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1781971140000
+ },
+ {
+  "id": "kb_t070",
+  "title": "Neželena pošta z lažnimi računi na pisarniške naslove",
+  "body": "## Val lažnih računov\n\nNa tri pisarniške naslove so prišla sporočila s priponko, ki se je predstavljala\nkot račun dobavitelja.\n\n### Opravljeno\n1. Sporočila označena kot neželena in blokirana domena pošiljatelja.\n2. Priponke niso bile odprte, preverjeno v dnevniku poštnega strežnika.\n3. Zaostrena pravila filtra za priponke tipa `.iso` in `.js`.\n4. Zaposleni obveščeni z navodilom, kako preveriti pošiljatelja.\n\n> Račun, ki ga ne pričakuješ, ni račun. Pred odpiranjem priponke pokliči dobavitelja\n> na številko, ki jo imaš ti, ne na tisto iz sporočila.",
+  "tags": [
+   "e-pošta",
+   "lažni računi",
+   "priponke"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_070",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1782208740000
+ },
+ {
+  "id": "kb_t072",
+  "title": "Zastoj pri odvijanju role na rezalniku",
+  "body": "Rola se je pri hitrem rezu zatikala, ker je bila os odvijalca umazana in suha.\n\n1. Os očiščena in namazana.\n2. Preverjena zavora odvijalca in rahlo popuščena.\n3. Odrezanih 200 m brez zastoja.",
+  "tags": [
+   "odvijalec",
+   "rola",
+   "zavora"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_material",
+  "categoryName": "Material in podajanje",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_summa2"
+  ],
+  "machineLabel": "Summa S3 D160",
+  "ticketId": "tkt_072",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1782817500000
+ },
+ {
+  "id": "kb_t075",
+  "title": "Kompresor pada pod delovni tlak ob polni obremenitvi",
+  "body": "## Padec tlaka v liniji\n\nOb hkratnem delovanju rezalne mize in pakirne linije je tlak padel z 8 na 5,5 bara.\n\n### Diagnostika\n1. Preverjen sesalni filter: močno zamašen, zamenjan.\n2. Ultrazvočni pregled linije: puščanje na dveh spojih v pakirnici.\n3. Preverjen sušilnik, deloval normalno.\n\n### Opravljeno\n- Zamenjan sesalni filter `ATC-1613-8720-00`\n- Zatesnjena dva spoja, zamenjana ena hitra spojka\n- Izpuščen kondenz iz posode\n- Izmerjen tlak pod polno obremenitvijo: stabilnih 7,8 bara\n\nServiser je ob obisku opravil še redni pregled in odčital ure delovanja.\n\n> Puščanje zraka je najdražja nevidna okvara v delavnici. Pregled linije je\n> vpisan v koledar dvakrat letno.",
+  "tags": [
+   "kompresor",
+   "tlak",
+   "puščanje",
+   "sesalni filter"
+  ],
+  "type": "FACILITY",
+  "categoryId": "fc_zrak",
+  "categoryName": "Podtlak, zrak in pnevmatika",
+  "departmentId": "dep_facilities",
+  "departmentName": "Klima in objekt",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_075",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1783604940000
+ },
+ {
+  "id": "kb_t076",
+  "title": "Napaka na krmilniku, stroj se med poslom ustavi",
+  "body": "## Nepričakovane zaustavitve med poslom\n\nStroj se je med daljšimi posli ustavil in javil splošno napako krmilnika.\n\n### Ugotovitev serviserja\nNapajalnik krmilne enote je imel napihnjena kondenzatorja, napetost je pod\nobremenitvijo padala pod dopustno mejo.\n\n### Opravljeno\n1. Zamenjan napajalnik krmilne enote.\n2. Preverjene napetosti pod polno obremenitvijo, stabilne.\n3. Posodobljena vdelana programska oprema krmilnika na priporočeno različico.\n4. Odrezan testni posel dolžine dveh ur brez zaustavitve.\n\nServiser je priporočil pregled napajalnikov na strojih, starejših od pet let.",
+  "tags": [
+   "krmilnik",
+   "napajalnik",
+   "kondenzator"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_elektrika",
+  "categoryName": "Elektrika in senzorji",
+  "departmentId": "dep_cutting",
+  "departmentName": "Razrez in CNC",
+  "machineIds": [
+   "mac_kongsberg"
+  ],
+  "machineLabel": "Esko Kongsberg C24",
+  "ticketId": "tkt_076",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1783844220000
+ },
+ {
+  "id": "kb_t078",
+  "title": "Opozorilo o stanju diska 2 na NAS",
+  "body": "## Opozorilo SMART na disku 2\n\nNAS je javil naraščajoče število realociranih sektorjev na disku 2.\n\n### Opravljeno\n1. Preverjeno stanje polja RAID: še vedno v redu, brez izpada.\n2. Pri pogodbenem izvajalcu naročen nadomestni disk enake kapacitete.\n3. Serviser je disk zamenjal in sprožil obnovo polja, končana v 6 urah brez napak.\n4. Star disk označen in izločen.\n\n> Opozorilo SMART je napoved okvare, ne okvara. Disk se zamenja takoj, ko se pojavi,\n> ne takrat, ko odpove.",
+  "tags": [
+   "nas",
+   "smart",
+   "raid",
+   "disk"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_omrezje",
+  "categoryName": "Omrežje in računalniki",
+  "departmentId": "dep_it",
+  "departmentName": "IT in omrežje",
+  "machineIds": [
+   "mac_nas"
+  ],
+  "machineLabel": "Synology RackStation RS1221+",
+  "ticketId": "tkt_078",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1784194680000
+ },
+ {
+  "id": "kb_t082",
+  "title": "RIP postaja se med večjim poslom zaustavi",
+  "body": "Postaja se je med obdelavo posla nad 4 GB zaustavila.\n\n1. Preverjen pomnilnik z diagnostiko: ena letev je javljala napake.\n2. Serviser je letev zamenjal v garancijskem roku, diagnostika po zamenjavi brez napak.\n3. Obdelan isti posel do konca, brez zaustavitve.",
+  "tags": [
+   "rip",
+   "pomnilnik"
+  ],
+  "type": "SOFTWARE",
+  "categoryId": "fc_programska",
+  "categoryName": "Programska oprema in RIP",
+  "departmentId": "dep_prepress",
+  "departmentName": "Priprava in RIP",
+  "machineIds": [],
+  "machineLabel": null,
+  "ticketId": "tkt_082",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1784125920000
+ },
+ {
+  "id": "kb_t084",
+  "title": "Napaka na sistemu za sušenje pri polni hitrosti",
+  "body": "Pri polni hitrosti je stroj javil pregretje sušilnika in se ustavil.\n\n### Ugotovitev\nFilter na dovodu zraka je bil zamašen do te mere, da ventilator ni dosegel\nzadostnega pretoka. Senzor je pravilno javil pregretje.\n\n### Postopek\n1. Stroj ustavljen in ohlajen do sobne temperature.\n2. Filter odstranjen, spran in posušen; nadomestni vgrajen medtem.\n3. Preverjen pretok pri polni hitrosti, brez ponovnega javljanja napake.\n4. Serviser je posodobil še krmilno programsko opremo sušilnika.\n\n> Filter gre v redni mesečni pregled. Ob polni izmeni se zamaši hitreje,\n> kot predvideva navodilo proizvajalca.",
+  "tags": [
+   "sušilnik",
+   "pregretje",
+   "filter",
+   "ventilator"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_toplota",
+  "categoryName": "Toplota, sušenje in UV",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng_pro"
+  ],
+  "machineLabel": "GongZheng H2513GN PRO",
+  "ticketId": "tkt_084",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1784458920000
+ },
+ {
+  "id": "kb_t085",
+  "title": "Madeži na hrbtni strani plošč po tisku",
+  "body": "Na vakuumski mizi se je nabralo črnilo iz prejšnje naklade in se je prenašalo\nna hrbtno stran novega materiala.\n\n1. Miza očiščena s predpisanim čistilom, v dveh prehodih.\n2. Preverjena prehodnost vakuumskih lukenj, tri so bile zamašene.\n3. Odtisnjena kontrolna plošča, brez madežev.\n4. Čiščenje mize dodano med tedenska opravila.",
+  "tags": [
+   "madeži",
+   "vakuumska miza",
+   "čiščenje"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_vzdrzevanje",
+  "categoryName": "Redno vzdrževanje",
+  "departmentId": "dep_printers",
+  "departmentName": "Tisk velikega formata",
+  "machineIds": [
+   "mac_gonzheng_pro"
+  ],
+  "machineLabel": "GongZheng H2513GN PRO",
+  "ticketId": "tkt_085",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1784040060000
+ },
+ {
+  "id": "kb_t086",
+  "title": "Alarm filtra na prezračevalni napravi",
+  "body": "## Alarm filtra na napravi Geniox\n\nNaprava je javila alarm padca tlaka na filtru in prešla v znižano moč.\n\n### Opravljeno\n1. Odčitan padec tlaka: nad mejo za menjavo.\n2. Zamenjana filtra na dovodu in odvodu (`F7` in `M5`).\n3. Ponastavljen števec ur filtra.\n4. Alarm ponastavljen, naprava se je vrnila na nazivni pretok.\n\n> Filtri se v tiskarni zamašijo hitreje kot v pisarni zaradi prahu iz razreza.\n> Interval menjave je skrajšan na štiri mesece.",
+  "tags": [
+   "filter",
+   "prezračevanje",
+   "alarm"
+  ],
+  "type": "MACHINE",
+  "categoryId": "fc_vzdrzevanje",
+  "categoryName": "Redno vzdrževanje",
+  "departmentId": "dep_facilities",
+  "departmentName": "Klima in objekt",
+  "machineIds": [
+   "mac_systemair"
+  ],
+  "machineLabel": "Systemair Geniox 14",
+  "ticketId": "tkt_086",
+  "pinned": false,
+  "views": 0,
+  "helpfulUp": 0,
+  "helpfulDown": 0,
+  "createdAt": 1785074640000
+ }
+]
